@@ -1,0 +1,389 @@
+@import 'variables.scss';
+
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 1600px;
+    font-family: sans-serif;
+}
+
+.Body-Div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.first-section {
+    background-color: $violet-bck-col;
+    height: 700px;
+    width: 100%;
+    color: white;
+    .navbar {
+        background-color: $violet-bck-col;
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 50px 0 50px 15vw;
+        font-size: 20px;
+        .logo {
+            background-image: url('../images/cuda.png');
+            background-repeat: no-repeat;
+            width: 117px;
+            height: 37px;
+            cursor: pointer;
+        }
+        .navbar-btns {
+            ul {
+                li {
+                    list-style-type: none;
+                    display: inline;
+                    padding: 10px 15px;
+                    margin: 0 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color:rgb(96, 67, 124) ;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        margin: 100px 50px 50px 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-size: 40px;
+            font-weight: lighter;
+            text-align: center;
+            width: 75%;
+        }
+        button {
+            margin-top: 80px;
+            padding: 20px 50px;
+            background-color: salmon;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            &:hover, &:active {
+                background-color: rgb(247, 104, 89);
+            }
+        }
+    }
+}
+
+.second-section {
+    background-color: $green-bck-col;
+    height: 700px;
+    width: 100%;
+    color: white;
+    .content {
+        margin: 70px 50px 50px 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .srvc-topic {
+            h1 {
+                &::after {
+                    border-bottom: 3px solid rgb(83, 139, 108); 
+                }
+            }
+        }
+        .srvc-list-container {
+            .srvc-list {
+                background-color: $violet-bck-col;
+                margin: 30px 40px;
+                display: flex;
+                .srvc-list-item {
+                    flex-wrap: wrap;
+                    h2 {
+                        font-weight: lighter;
+                    }
+                    &--Flag-icon {
+                        position: absolute;
+                        background-image: url('../images/Flag-icon.png');
+                        background-repeat: no-repeat;
+                        width: 120px;
+                        height: 124px;
+                        top: 15%;
+                        left: 15%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &--Crayon-icon {
+                        position: absolute;
+                        background-image: url('../images/Crayon-icon.png');
+                        background-repeat: no-repeat;
+                        width: 90px;
+                        height: 131px;
+                        top: 15%;
+                        left: 40%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &--Gear-icon {
+                        position: absolute;
+                        background-image: url('../images/Gears-icon.png');
+                        background-repeat: no-repeat;
+                        width: 159px;
+                        height: 126px;
+                        top: 15%;
+                        left: 60%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &--Rocket-icon {
+                        position: absolute;
+                        background-image: url('../images/Rocket-icon.png');
+                        background-repeat: no-repeat;
+                        width: 95px;
+                        height: 134px;
+                        top: 15%;
+                        left: 85%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.third-section {
+    height: auto;
+    width: 100%;
+    background-color: $gray-bck-col;
+    .content {
+        .srvc-list-container {
+            margin: 0;
+            display: flex;
+            .srvc-list-item {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                &--photo {
+                    margin: 0 auto;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    background-color: gray;
+                }
+                h2 {
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                role {
+                    color: rgb(31, 91, 255);
+                    margin-bottom: 15px;
+                }
+                span {
+                    margin-bottom: 10px;
+                    height: auto;
+                    min-height: 150px;
+                }
+            }
+        }
+    }
+}
+
+.fourth-section {
+    background-color: rgb(240, 199, 137);
+    .content {
+        .srvc-topic {
+            h1 {
+                &::after {
+                    border-bottom: 3px solid rgb(209, 174, 121);
+                }
+            }
+        }
+        .prtfl-buttons {
+            ul {
+                li {
+                    list-style-type: none;
+                    display: inline;
+                    padding: 10px 15px;
+                    margin: 0 10px;
+                    border-radius: 5px;
+                    background-color:rgb(209, 174, 121) ;
+                    cursor: pointer;
+                    &:hover {
+                        background-color:rgb(190, 159, 112) ;
+                    }
+                    &:active, &:focus {
+                        background-color: wheat;
+                    }
+                }
+            }
+        }
+        .pictures-cont {
+            width: 100%;
+            height: 100%;
+            padding: 1vw 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            &__line {
+                display: flex;
+                justify-content: space-around;
+                width: 75%;
+                .image-box {
+                    width: auto;
+                    height: auto;
+                    margin: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .image {
+                        margin: 0 auto;
+                        box-shadow: 5px 5px 10px;
+                    }
+                    .img1 {
+                        background-image: url('../images/laptop.jpg');
+                        background-repeat: no-repeat;
+                        width: 421px;
+                        height: 250px;
+                    }
+                    .img2 {
+                        background-image: url('../images/web-design.jpg');
+                        background-repeat: no-repeat;
+                        width: 333px;
+                        height: 250px;
+                    }
+                    .img3 {
+                        background-image: url('../images/macbook.jpg');
+                        background-repeat: no-repeat;
+                        width: 377px;
+                        height: 250px;
+                    }
+                    .img4 {
+                        background-image: url('../images/mockup.jpg');
+                        background-repeat: no-repeat;
+                        width: 377px;
+                        height: 250px;
+                    }
+                    span {
+                        margin-top: 25px;
+                        text-transform: uppercase;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        weight: 350px;
+                    }
+                }
+            }
+        }
+        button {
+            margin-top: 3vw;
+            padding: 15px 20px 15px 40px;
+            border-radius: 5px;
+            background-color: rgb(55, 199, 185);
+            outline: none;
+            border: none;
+            color: white;
+            &:hover {
+                background-color: rgb(51, 177, 164);
+            }
+            &:active {
+                background-color: rgb(9, 63, 58);
+            }
+        }
+    }
+}
+
+.fifth-section {
+    background-color: rgb(34, 76, 139);
+    color: white;
+
+    .content {
+        .srvc-topic {
+            font-weight: lighter;
+            p {
+                font-size: 17px;
+            }
+        }
+        .srvc-list-container {
+            width: 60vw;
+            margin-top: 50px;
+            flex-wrap: wrap;
+
+            .inp-line {
+                display: flex;
+                justify-content: space-around;
+                input {
+                    width: 26vw;
+                    flex-grow: 1;
+                }
+            }
+            .area {
+                height: 30px;
+                margin: 10px;
+                width: 57vw;
+                outline: none;
+                font-size: 16px;
+                padding: 3px 10px;
+                border: none;
+                background-color: rgb(28, 59, 107);
+                &::placeholder {
+                    color: white;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    padding-left: 20px;
+                }
+            }
+            textarea {
+                height: 200px;
+                resize: vertical;
+                &::placeholder {
+                    padding-top: 10px;
+                }
+            }
+
+            .aukstis {
+                height: 200px;
+            }
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 20px 40px 20px 60px;
+            border-radius: 5px;
+            background-color: rgb(8, 134, 192);
+            outline: none;
+            border: none;
+            color: white;
+            &:hover {
+                background-color: rgb(8, 119, 170);
+            }
+            &:active {
+                background-color: rgb(5, 97, 139);
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        background-color: rgb(31, 69, 126);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            width: 90%;
+            height: 100px;
+            margin: 0; 
+            display: flex;
+            justify-content: space-around;
+            li {
+                height: 100%;
+                list-style-type: none;
+                display: inline;
+                line-height: 100px;
+                a {
+                    text-decoration: none; 
+                    margin: 20px;
+                    color: white;
+                    font-size: 20px;
+                    &:hover {
+                        color: dodgerblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'media.scss';

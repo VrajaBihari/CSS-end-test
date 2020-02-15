@@ -1,0 +1,15 @@
+import './assets/styles/app.scss';
+import './index.hbs';
+import '../src/assets/images/Crayon-icon.png';
+import '../src/assets/images/Flag-icon.png';
+import '../src/assets/images/Gears-icon.png';
+import '../src/assets/images/Rocket-icon.png';
+import '../src/assets/images/Fb.png';
+import '../src/assets/images/Twitter.png';
+import '../src/assets/images/LinkedIn.png';
+import '../src/assets/images/Mail.png';
+import '../src/assets/images/laptop.jpg';
+import '../src/assets/images/macbook.jpg';
+import '../src/assets/images/mockup.jpg';
+import '../src/assets/images/web-design.jpg';
+import '../src/assets/images/cuda.png';
